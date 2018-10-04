@@ -11,7 +11,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'KinderStärken e.V. Jena' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -44,6 +44,7 @@ module.exports = {
   */
   css: [
     'static/css/main.css',
+    'static/css/prettyPhoto.css',
     'static/css/responsive.css',
   ],
 
@@ -51,6 +52,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/global.js'
   ],
 
   /*

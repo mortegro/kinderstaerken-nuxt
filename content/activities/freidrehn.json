@@ -1,0 +1,11 @@
+{
+  "type": "activity",
+  "id": "anliegen",
+  "title": "Tanzprojekt Freidrehn",
+  "date": "2016-03-01T22:12:03.284Z",
+  "path": "/freidrehn/",
+  "icon": "fa-music",
+  "layout": "big",
+  "imageUrl": "dancing.jpg",
+  "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque dignissim mi maximus interdum. Cras dictum quam et ex molestie facilisis. Proin dapibus sed sapien nec gravida. Praesent at leo ut erat varius rhoncus at non mi. Quisque cursus non leo et varius. Maecenas porttitor scelerisque sapien at venenatis. Proin pellentesque gravida elementum. Nam eget porttitor ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean nec commodo lacus, eu mollis nisi.\n"
+}
