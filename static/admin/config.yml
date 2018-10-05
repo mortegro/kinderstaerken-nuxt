@@ -22,20 +22,7 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'json'
     fields: # The fields for each document, usually in front matter
-      - {label: "ID", name: "id", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Typ", name: "type", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "slider" # Used in routes, e.g., /admin/collections/blog
-    label: "Slider-Elements" # Used in the UI
-    folder: "content/slider" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    format: 'json'
-    fields: # The fields for each document, usually in front matter
-      - {label: "ID", name: "id", widget: "string"}
-      - {label: "Typ", name: "type", widget: "string"}
-      - {label: "Image", name: "imageUrl", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "activities" # Used in routes, e.g., /admin/collections/blog
     label: "Activities" # Used in the UI
@@ -44,12 +31,8 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'json'
     fields: # The fields for each document, usually in front matter
-      - {label: "ID", name: "id", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Typ", name: "type", widget: "string"}
+      - {label: "Kategorie", name: "category", widget: "string"}
       - {label: "Image", name: "imageUrl", widget: "image"}
-      - {label: "Layout", name: "layout", widget: "string"}
-      - {label: "Icon", name: "icon", widget: "string"}
-      - {label: "Beginn", name: "date_begin", widget: "datetime", required: false}
-      - {label: "Ende", name: "date_end", widget: "datetime", required: false}
+      - {label: "Datum", name: "date", widget: "datetime", required: false}
       - {label: "Body", name: "body", widget: "markdown"}

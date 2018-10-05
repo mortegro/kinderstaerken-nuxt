@@ -1,4 +1,10 @@
 <template lang="pug">
-	.content-title.column-title
+	h2.column-title
 		slot
 </template>
+
+<style>
+.column-title {
+	margin-top: 20px;
+}
+</style>

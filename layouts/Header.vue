@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import MainNavigation from '~/components/MainNavigation.vue'
+import MainNavigation from './MainNavigation.vue'
 export default {
   components: {
     MainNavigation

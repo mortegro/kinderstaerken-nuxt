@@ -1,12 +1,12 @@
 <template lang="pug">
-	section
-		slot
+  section
+    slot
 </template>
 
 <style scoped>
 	section {
-		margin: '0 20px';
-		padding-top: true
+		padding-top: 80px;
+		border: 1px solid red;
 	}
 </style>
 
