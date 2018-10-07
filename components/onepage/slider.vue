@@ -1,22 +1,22 @@
 <template lang="pug">
   section#main-slider
     carousel(:perPage='1', :autoplay="true", :autoplayHoverPause="true", :paginationEnabled="false", :autoplayLoop="true")
-      slide
-        .item(style='background-image: url(images/uploads/bg2.jpg);')
-          .slider-inner
-            .container
-              .row
-                .col-sm-6
-                  .carousel-content
-                    h2
-                      | Auch f&uuml;r 
-                      span Mut
-                      |  und St&auml;rke braucht es 
-                      span Vorbilder
-                    .ce-content
-                      | Dadurch dass wir Kindern und Jugendlichen Einblick in unsere Welt geben, 
-                      | können diese ihren eigenen Horizont erweitern.
-                    a.btn.btn-primary(href="#mentors") Mentor werden.
+      //- slide
+      //-   .item(style='background-image: url(images/uploads/bg2.jpg);')
+      //-     .slider-inner
+      //-       .container
+      //-         .row
+      //-           .col-sm-6
+      //-             .carousel-content
+      //-               h2
+      //-                 | Auch für 
+      //-                 span Mut
+      //-                 |  und Stärke braucht es 
+      //-                 span Vorbilder
+      //-               .ce-content
+      //-                 | Dadurch dass wir Kindern und Jugendlichen Einblick in unsere Welt geben, 
+      //-                 | können diese ihren eigenen Horizont erweitern.
+      //-               a.btn.btn-primary(href="#mentors") Mentor werden.
       slide
         .item(style='background-image: url(images/uploads/bg1.jpg);')
           .slider-inner
@@ -26,10 +26,10 @@
                   .carousel-content
                     h2
                       span Entwicklung
-                      |  braucht Kreativit&auml;t, Lernen und Spass
+                      |  braucht Kreativität, Lernen und Spass
                     .ce-content
-                      | Durch das Entdecken der in uns liegenden Potentiale lassen sich schwierige Zeiten einfacher &uuml;berwinden.
-                    a.btn.btn-primary(href="#sponsors") Projekte unterstützen.
+                      | Durch das Entdecken der in uns liegenden Potentiale lassen sich schwierige Zeiten einfacher überwinden.
+                    nuxt-link.btn.btn-primary(to='/#support' v-smooth-scroll="{ duration: 1000, offset: -100 }") Projekte unterstützen.
       slide                
         .item(style='background-image: url(images/uploads/bg3.jpg);')
           .slider-inner
@@ -41,13 +41,13 @@
                       | Was wir selbst
                       span  erschaffen
                       |  haben, können wir auch selbst
-                      span  verstehen.
+                      span  begreifen.
                     .ce-content.dark
                       | Wir erschließen uns unsere Welt nicht nur über Augen und Ohren, sondern auch über unsere Hände und unseren Verstand.
-                      |  Besonderd dadurch, was wir mit diesen erschaffen, verstehen wir unsere eigenen Möglichkeiten.
+                      |  Besonders dadurch, was wir mit diesen erschaffen, verstehen wir unsere eigenen Möglichkeiten.
                     a.btn.btn-primary(href="#sponsors") Projektpate werden.
       slide
-        .item(style='background-image: url(images/uploads/bg4.jpg);')
+        .item(style='background-image: url(images/uploads/bg7.jpg);')
           .slider-inner
             .container
               .row

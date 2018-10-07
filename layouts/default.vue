@@ -2,9 +2,8 @@
   <div id="home" class="homepage">
     <Header/>
     <nuxt/>
-    <footer/>
+    <Footer/>
     <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
     <script src="js/main.js"></script>
 
   </div>

@@ -13,24 +13,24 @@
                 //-   img.img-responsive(src='images/blog/01.jpg', alt='')
                 //-   span.post-format.post-format-video
                 //-     i.fa.fa-film
-                h2.entry-title Spenden
+                h2.entry-title Spender
               .entry-content
                 Atom(id="spenden")
                 .media.service-box.wow.fadeInRight
                   .pull-left
-                    i.fa.fa-line-chart
+                    i.fa.fa-hand-holding-heart
                   .media-body
                     h4.media-heading Finanzielle Unterstützung
                     Atom(id="konto")
                 .media.service-box.wow.fadeInRight
                   .pull-left
-                    i.fa.fa-cubes
+                    i.fa.fa-clipboard-list
                   .media-body
                     h4.media-heading Amazon Wishlist
                     Atom(id="wishlist")
                 .media.service-box.wow.fadeInRight
                   .pull-left
-                    i.fa.fa-pie-chart
+                    i.fa.fa-shopping-cart
                   .media-body
                     h4.media-heading Amazon Partnerprogramm
                     Atom(id="partnerprogramm")
@@ -38,27 +38,25 @@
           .blog-post.blog-media.wow.fadeInRight(data-wow-duration='300ms', data-wow-delay='100ms')
             article.media.clearfix
               .entry-thumbnail.pull-left
-                img.img-responsive(src='images/uploads/give.jpg', alt='')
+                img.img-responsive(src='images/uploads/workshoppate.jpg', alt='')
                 span.post-format.post-format-gallery
-                  i.fa.fa-image
+                  i.fa.fa-users
               .media-body
                 header.entry-header
-                  h2.entry-title Anstifter werden
+                  h2.entry-title An-Stifter
                 .entry-content
                   Atom(id="anstifter")
-                  a.btn.btn-primary(href='#') Mehr
           .blog-post.blog-media.wow.fadeInRight(data-wow-duration='300ms', data-wow-delay='200ms')
             article.media.clearfix
               .entry-thumbnail.pull-left
                 img.img-responsive(src='images/uploads/give.jpg', alt='giving hands')
                 span.post-format.post-format-audio
-                  i.fa.fa-music
+                  i.fa.fa-parachute-box
               .media-body
                 header.entry-header
                   h2.entry-title Workshop-Pate
                 .entry-content
                   Atom(id="projektpate")
-                  a.btn.btn-primary(href='#') Mehr
 </template>
 
 <style scoped>

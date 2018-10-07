@@ -1,9 +1,8 @@
 <template lang="pug">
   section#contact
-    #google-map(ref="gmap")
     .contact-wrapper
-      .container
-        .row
+      .container(style="background-image: url('images/contact.jpg');background-size: contain;background-repeat:round;")
+        .row(style="margin-bottom: 150px")
           .col-sm-4.col-sm-offset-8
             .contact-form
               h3 Kontakt
@@ -28,26 +27,13 @@
 
 <script>
 export default {
-  mounted() {
-    // return {
-    //   center : {lat:50.932230, lng: 11.582},
-    //   markers: [
-    //     { position: {lat: 11.582, lng: 11.582}}
-    //   ]
-    // }
-    const ourPosition = new google.maps.LatLng('50.932230','11.582');
-    this.map = new google.maps.Map(this.$refs.gmap, {
-      zoom: 17,
-      scrollwheel: false,
-      center: ourPosition,
-    });
-  }
+
 }
 </script>
 
-<style>
-#google-map {
-  height: 650px;
+<style scoped>
+.contact-wrapper {
+  background: #dddddd
 }
 </style>
 
