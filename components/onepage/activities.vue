@@ -30,7 +30,14 @@ export default {
       ...context(key),
       _path: `/activities/${key.replace('.json', '').replace('./', '')}`
     }));
-    return { activities };
+    const sortFn = function (a,b) {
+      if (a && a.date && b && b.date) {
+        if (new Date(a.date) < new Date(b.date)) return -1; else return 1
+      }
+      return 0
+    }
+    const sorted = activities.sort(sortFn)
+    return { activities: sorted };
   }
 }
 </script>

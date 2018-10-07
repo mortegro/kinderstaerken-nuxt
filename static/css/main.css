@@ -460,8 +460,6 @@ ul.nostyle i {
 }
 
 #portfolio .portfolio-item .portfolio-item-inner .portfolio-info {
-    opacity: 0;
-    transition: opacity 400ms;
     -webkit-transition: opacity 400ms;
     position: absolute;
     bottom: 0;
@@ -470,6 +468,15 @@ ul.nostyle i {
     padding: 10px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-item-inner .portfolio-info a{
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+#portfolio .portfolio-item:hover .portfolio-info a{
+    opacity: 1;
 }
 
 #portfolio .portfolio-item .portfolio-item-inner .portfolio-info h3 {
@@ -495,9 +502,6 @@ ul.nostyle i {
     -webkit-box-shadow: 0 0 0 2px #fff;
 }
 
-#portfolio .portfolio-item:hover .portfolio-info {
-    opacity: 1;
-}
 
 
 /* Start: Recommended Isotope styles */

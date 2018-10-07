@@ -36,3 +36,4 @@ collections:
       - {label: "Image", name: "imageUrl", widget: "image"}
       - {label: "Datum", name: "date", widget: "datetime", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Teaser", name: "teaser", widget: "markdown"}
