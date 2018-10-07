@@ -38,7 +38,7 @@
           .blog-post.blog-media.wow.fadeInRight(data-wow-duration='300ms', data-wow-delay='100ms')
             article.media.clearfix
               .entry-thumbnail.pull-left
-                img.img-responsive(src='images/blog/02.jpg', alt='')
+                img.img-responsive(src='images/uploads/give.jpg', alt='')
                 span.post-format.post-format-gallery
                   i.fa.fa-image
               .media-body
@@ -50,7 +50,7 @@
           .blog-post.blog-media.wow.fadeInRight(data-wow-duration='300ms', data-wow-delay='200ms')
             article.media.clearfix
               .entry-thumbnail.pull-left
-                img.img-responsive(src='images/blog/03.jpg', alt='')
+                img.img-responsive(src='images/uploads/give.jpg', alt='giving hands')
                 span.post-format.post-format-audio
                   i.fa.fa-music
               .media-body

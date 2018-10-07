@@ -1,5 +1,5 @@
 <template>
-  <div  id="home" class="homepage">
+  <div id="home" class="homepage">
     <Header/>
     <nuxt/>
     <footer/>

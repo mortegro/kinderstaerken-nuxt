@@ -11,19 +11,17 @@
     .collapse.navbar-collapse.navbar-right
       ul.nav.navbar-nav
         li.scroll.active
-          a(href='/#home' data-scroll) Home
+          nuxt-link(to='/#home' v-smooth-scroll="{ duration: 1000, offset: 0}") Home
         li.scroll
-          a(href='/#cause' data-scroll) Anliegen
+          nuxt-link(to='/#cause' v-smooth-scroll="{ duration: 1000, offset: -100 }") Anliegen
         li.scroll
-          a(href='/#workshops' data-scroll) Workshops
+          nuxt-link(to='/#workshops' v-smooth-scroll="{ duration: 1000, offset: -100 }") Workshops
         li.scroll
-          a(href='/#mentors' data-scroll) Mentoren
+          nuxt-link(to='/#support' v-smooth-scroll="{ duration: 1000, offset: -100 }") Support
         li.scroll
-          a(href='/#sponsors' data-scroll) Sponsoring
+          nuxt-link(to='/#get-in-touch' v-smooth-scroll="{ duration: 1000, offset: -100 }") Kontakt
         li.scroll
-          a(href='/#get-in-touch' data-scroll) Kontakt
-        li.scroll
-          a(href='/impressum/') Impressum
+          nuxt-link(to='/impressum/') Impressum
 </template>
 
 <style>

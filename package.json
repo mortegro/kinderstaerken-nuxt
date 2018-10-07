@@ -15,7 +15,8 @@
     "moment": "^2.22.2",
     "nuxt": "^2.0.0",
     "vue-carousel": "^0.14.0",
-    "vue-markdown": "^2.2.4"
+    "vue-markdown": "^2.2.4",
+    "vue2-smooth-scroll": "^1.0.3"
   },
   "devDependencies": {
     "eslint-config-prettier": "^3.1.0",
@@ -31,5 +32,4 @@
       "port": "3333"
     }
   }
-
 }
