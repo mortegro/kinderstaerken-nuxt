@@ -29,7 +29,7 @@
                       |  braucht Kreativität, Lernen und Spass
                     .ce-content
                       | Durch das Entdecken der in uns liegenden Potentiale lassen sich schwierige Zeiten einfacher überwinden.
-                    nuxt-link.btn.btn-primary(to='/#support' v-smooth-scroll="{ duration: 1000, offset: -100 }") Projekte unterstützen.
+                    nuxt-link.btn.btn-primary(to='/#support', v-smooth-scroll="{ duration: 1000, offset: -100 }") Projekte unterstützen.
       slide                
         .item(style='background-image: url(images/uploads/bg3.jpg);')
           .slider-inner
@@ -45,7 +45,7 @@
                     .ce-content.dark
                       | Wir erschließen uns unsere Welt nicht nur über Augen und Ohren, sondern auch über unsere Hände und unseren Verstand.
                       |  Besonders dadurch, was wir mit diesen erschaffen, verstehen wir unsere eigenen Möglichkeiten.
-                    a.btn.btn-primary(href="#sponsors") Projektpate werden.
+                    nuxt-link.btn.btn-primary(to='/#support', v-smooth-scroll="{ duration: 1000, offset: -100 }") Projektpate werden.
       slide
         .item(style='background-image: url(images/uploads/bg7.jpg);')
           .slider-inner
@@ -64,7 +64,7 @@
                     .ce-content.dark
                       | Wenn Sie Fragen oder Anregungen haben, oder gern etwas zusammen mit uns realisieren möchten, 
                       | setzten sie sich mit uns in Verbindung.
-                    a.btn.btn-primary(href="#get-in-touch") Kontakt aufnehmen.                    
+                    nuxt-link.btn.btn-primary(to='/#get-in-touch', v-smooth-scroll="{ duration: 1000, offset: -100 }") Kontakt aufnehmen.                    
 </template>
 
 <script>
