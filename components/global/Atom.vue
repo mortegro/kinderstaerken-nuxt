@@ -1,11 +1,10 @@
 <template lang="pug">
 div.content-element
   div(v-if="title" :class="[titleClass]")  {{heading}}
-  vue-markdown(:class="[contentClass]") {{body}}
+  div(:class="[contentClass]",v-html="$md.render(body)")
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'
 export default {
   props: {
     contentClass: {
@@ -24,15 +23,12 @@ export default {
       required: true
     }
   },
-  components: {
-    VueMarkdown
-  },
   data() {
     if (!this.id) return {body:"Not found"}
     let element = require('~/content/atoms/' + this.id + '.json');
     if (!element || !element.body) 
       element={body:"Not found"} 
     return element;
-  }
+  },
 }
 </script>
