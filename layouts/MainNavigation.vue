@@ -7,7 +7,7 @@
         span.icon-bar
         span.icon-bar
       a.navbar-brand(href='index.html')
-        img(src='~/static/images/uploads/logoverein.png', alt='logo')
+        img(src='images/uploads/logoverein.png', alt='logo')
     .collapse.navbar-collapse.navbar-right
       ul.nav.navbar-nav
         li.scroll.active

@@ -19,7 +19,7 @@ export default {
   },
   computed: {
     fullImgPath: function() {
-      return "/images/uploads/" + this.imageUrl
+      return "images/uploads/" + this.imageUrl
     }
   }
 }
