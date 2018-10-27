@@ -4,7 +4,7 @@
       .section-header
         Title Workshops
         Atom(id="workshops")
-      .features
+      .features.row
         .col-md-4.col-sm-6.wow.fadeInUp(data-wow-duration='300ms', data-wow-delay='0ms')
           .media.service-box
             .pull-left
