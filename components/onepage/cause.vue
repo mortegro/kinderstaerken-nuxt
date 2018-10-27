@@ -20,5 +20,8 @@
 <script>
 </script>
 
-<style>
+<style scpoed>
+#cause {
+  margin-top: 80px;
+}
 </style>
