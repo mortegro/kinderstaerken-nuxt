@@ -1,15 +1,11 @@
 <template lang="pug">
-  nav#main-menu.navbar.navbar-default.navbar-fixed-top(role='banner')
-    .navbar-header
-      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href='index.html')
-        img(src='images/uploads/logoverein.png', alt='logo')
-    .collapse.navbar-collapse.navbar-right
-      ul.nav.navbar-nav
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top(role='banner')
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navcollapse')
+      span.navbar-toggler-icon
+    a.navbar-brand(href='/')
+      img(src='images/uploads/logoverein.png', alt='logo')
+    #navcollapse.collapse.navbar-collapse
+      ul.nav.navbar-nav.ml-auto
         li.scroll.active
           nuxt-link(to='/#home' v-smooth-scroll="{ duration: 1000, offset: 0}") Home
         li.scroll
@@ -24,9 +20,9 @@
           nuxt-link(to='/impressum/') Impressum
 </template>
 
-<style>
+<style scoped>
 /* Header shrink not working yet... */
-.navbar.navbar-default {
+.navbar-light{
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
@@ -34,26 +30,117 @@
   padding-left: 30px;
 }
 
-.navbar.navbar-default .navbar-toggle {
-  margin-top: 32px;
-}
 
-.navbar.navbar-default .navbar-brand {
+.navbar-brand {
   height: auto;
   padding: 22px 15px 21px;
 }
 
-.navbar.navbar-default.shrink .navbar-brand {
+.navbar-brand img {
+  height: 56px;
+}
+
+/* Shrink */
+.navbar-light.shrink .navbar-brand {
   height: auto;
   padding: 5px 15px 5px;
 }
 
-.navbar.navbar-default .navbar-brand img {
+.navbar-light.shrink .navbar-brand img {
   height: 56px
 }
 
-.navbar.navbar-default.shrink .navbar-brand img {
-  height: 56px
+@media only screen and (min-width: 768px) {
+    .navbar-light{
+        background: rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    .navbar-nav>li {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .navbar-nav>li.active,
+    .navbar-nav>li.open,
+    .navbar-nav>li:hover {
+        background: transparent;
+        padding-top: 37px;
+        border-top: 3px solid #45aed6;
+    }
+
+    /* Dropdown menu */
+    .dropdown-menu {
+        padding: 0 20px;
+        min-width: 220px;
+        background-color: rgba(26, 28, 40, 0.9);
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        background-clip: inherit;
+    }
+    .dropdown-menu>li {
+        border-left: 3px solid transparent;
+        margin-left: -20px;
+        padding-left: 17px;
+        -webit-transition: border-color 400ms;
+        -webkit-transition: border-color 400ms;
+        transition: border-color 400ms;
+    }
+    .dropdown-menu>li>a {
+        border-top: 1px solid #404455;
+        padding: 15px 0;
+        color: #eeeeee;
+    }
+    .dropdown-menu>li:first-child>a {
+        border-top: 0;
+    }
+    .dropdown-menu>li.active,
+    .dropdown-menu>li.open,
+    .dropdown-menu>li:hover {
+        border-left-color: #45aed6;
+    }
+    .dropdown-menu>li.active>a,
+    .dropdown-menu>li.open>a,
+    .dropdown-menu>li:hover>a {
+        color: #45aed6;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    navbar-nav>li,
+    navbar-nav>li.active,
+    navbar-nav>li.open,
+    navbar-nav>li:hover {
+        padding: 0 15px;
+        line-height: 50px;
+        border-top: 3px solid transparent;
+    }
+    navbar-nav>li.active,
+    navbar-nav>li.open,
+    navbar-nav>li:hover {
+        border-top-color: #45aed6;
+    }
+    .navbar-header {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        float: none;
+        height: 60px;
+        display: inline-block;
+        padding: 10px;
+    }
+    .navbar>.container .navbar-brand img,
+    .navbar>.container-fluid .navbar-brand img {
+        max-height: 100%
+    }
+
 }
 
 </style>
