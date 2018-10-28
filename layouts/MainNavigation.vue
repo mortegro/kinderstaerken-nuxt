@@ -7,22 +7,22 @@
     #navcollapse.collapse.navbar-collapse
       ul.nav.navbar-nav.ml-auto
         li.scroll
-          nuxt-link(to='/#home' v-smooth-scroll="{ duration: 1000, offset: -100}") Home
+          nuxt-link(to='/#home', data-toggle='collapse', data-target='#navcollapse', v-smooth-scroll="{ duration: 1000, offset: -100}") Home
         li.scroll
-          nuxt-link(to='/#cause' v-smooth-scroll="{ duration: 1000, offset: -200 }") Anliegen
+          nuxt-link(to='/#cause', data-toggle='collapse', data-target='#navcollapse', v-smooth-scroll="{ duration: 1000, offset: -200 }") Anliegen
         li.scroll
-          nuxt-link(to='/#workshops' v-smooth-scroll="{ duration: 1000, offset: -200 }") Workshops
+          nuxt-link(to='/#workshops', data-toggle='collapse', data-target='#navcollapse', v-smooth-scroll="{ duration: 1000, offset: -200 }") Workshops
         li.scroll
-          nuxt-link(to='/#support' v-smooth-scroll="{ duration: 1000, offset: -200 }") Support
+          nuxt-link(to='/#support', data-toggle='collapse', data-target='#navcollapse', v-smooth-scroll="{ duration: 1000, offset: -200 }") Support
         li.scroll
-          nuxt-link(to='/#activities' v-smooth-scroll="{ duration: 1000, offset: -200 }") Aktivitäten
+          nuxt-link(to='/#activities', data-toggle='collapse', data-target='#navcollapse', v-smooth-scroll="{ duration: 1000, offset: -200 }") Aktivitäten
         li.scroll
-          nuxt-link(to='/#get-in-touch' v-smooth-scroll="{ duration: 1000, offset: -100 }") Kontakt
+          nuxt-link(to='/#get-in-touch', data-toggle='collapse', data-target='#navcollapse', v-smooth-scroll="{ duration: 1000, offset: -100 }") Kontakt
         //- li.scroll
         //-   nuxt-link(to='/impressum/') Impressum
 </template>
 
-<style scoped>
+<style>
 /* Header shrink not working yet... */
 .navbar-light{
   border: 0;
@@ -75,7 +75,7 @@
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 991px) {
     .navbar-light{
         background: rgba(255, 255, 255, 1);
         -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
@@ -135,19 +135,17 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    navbar-nav>li,
-    navbar-nav>li.active,
-    navbar-nav>li.open,
-    navbar-nav>li:hover {
+@media only screen and (max-width: 991px) {
+    .navbar-nav>li,
+    .navbar-nav>li.active,
+    .navbar-nav>li.open,
+    .navbar-nav>li:hover {
         padding: 0 15px;
-        line-height: 50px;
+        line-height: 30px;
         border-top: 3px solid transparent;
     }
-    navbar-nav>li.active,
-    navbar-nav>li.open,
-    navbar-nav>li:hover {
-        border-top-color: #45aed6;
+    .navbar-nav>li:hover {
+      background-color: #d6dee0
     }
     .navbar-header {
         float: none;
