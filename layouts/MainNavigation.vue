@@ -30,7 +30,6 @@
   padding-left: 30px;
 }
 
-
 .navbar-brand {
   height: auto;
   padding: 22px 15px 21px;
@@ -49,6 +48,30 @@
 .navbar-light.shrink .navbar-brand img {
   height: 56px
 }
+
+.nav.main-tab {
+    background: #eee;
+    border-bottom: 3px solid #222534;
+    border-radius: 3px 3px 0 0;
+}
+
+.nav.main-tab>li>a {
+    color: #272727;
+}
+
+.nav.main-tab>li.active>a {
+    background: #222534;
+    color: #45aed6;
+}
+
+.nav.main-tab>li:first-child>a {
+    border-radius: 3px 0 0 0;
+}
+
+.nav.main-tab>li:last-child>a {
+    border-radius: 0 3px 0 0;
+}
+
 
 @media only screen and (min-width: 768px) {
     .navbar-light{

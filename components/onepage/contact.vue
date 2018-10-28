@@ -58,4 +58,21 @@ img {
 }
 
 
+#contact {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.contact-form h3 {
+    margin-top: 0;
+}
+
+
 </style>

@@ -90,19 +90,11 @@ export default {
 
 
 <style scoped>
-.blog-post.blog-media .entry-thumbnail {
-    margin: -15px 15px -15px -15px;
-    position: relative;
+.blog-post {
+    border: 1px solid #eee;
+    padding: 15px;
 }
 
-.blog-post.blog-media .post-format {
-    position: absolute;
-    top: 20px;
-    right: -10px;
-}
-.blog-post.blog-media {
-    margin-bottom: 30px;
-}
 .blog-post .post-format {
     display: inline-block;
     width: 40px;
@@ -115,7 +107,116 @@ export default {
     border-radius: 100px;
 }
 
+/* Blog large */
+.blog-post.blog-large .entry-thumbnail {
+    margin: -15px -15px 15px;
+    position: relative;
+}
+
+.blog-post.blog-large .post-format {
+    width: 66px;
+    height: 66px;
+    line-height: 60px;
+    position: absolute;
+    right: 20px;
+    bottom: -33px;
+}
+
+.blog-post.blog-large .post-format>i {
+    font-size: 20px;
+}
+
+.blog-post.blog-large .entry-date {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #45aed6;
+}
+
+.blog-post.blog-large .entry-title {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.blog-post.blog-large .entry-title a {
+    color: #64686d;
+}
+
+.blog-post.blog-large .entry-title a:hover {
+    color: #45aed6;
+}
+
+/* Blog media */
+.blog-post.blog-media {
+    margin-bottom: 30px;
+}
+
+.blog-post.blog-media .entry-thumbnail {
+    margin: -15px 15px -15px -15px;
+    position: relative;
+}
+
+.blog-post.blog-media .post-format {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+}
+
+.blog-post.blog-media .entry-date {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #45aed6;
+}
+
+.blog-post.blog-media .entry-title {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.blog-post.blog-media .entry-title a {
+    color: #64686d;
+}
+
+.blog-post.blog-media .entry-title a:hover {
+    color: #45aed6;
+}
+
+/* Entry meta */
+.blog-post .entry-meta {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.blog-post .entry-meta>span {
+    display: inline-block;
+    margin-right: 10px;
+    color: #999;
+}
+
+.blog-post .entry-meta>span>a {
+    color: #999;
+}
+
+.blog-post .entry-meta>span>a:hover {
+    color: #45aed6;
+}
+
 h2 {
   margin-top: 0px;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  .blog-post.blog-media .entry-thumbnail{
+      width: 50%;
+  }
+}
+
 </style>
