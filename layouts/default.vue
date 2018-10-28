@@ -3,8 +3,8 @@
     <Header/>
     <nuxt/>
     <Footer/>
-    <script src="js/mousescroll.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/mousescroll.js"></script>
+    <script src="/js/main.js"></script>
 
   </div>
 </template>

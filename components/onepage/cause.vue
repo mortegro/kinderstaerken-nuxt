@@ -5,10 +5,10 @@
         Title Unser Anliegen
         Atom.wow.fadeInDown(id='anliegen')
         .row
-          .col-sm-6.wow.fadeInLeft
+          .col-md-6.wow.fadeInLeft
             ColumnTitle Seelische Erkrankungen
             Atom(id='erkrankungen')
-          .col-sm-6.wow.fadeInRight
+          .col-md-6.wow.fadeInRight
             ColumnTitle Therapie
             Atom(id='therapie')
         .row

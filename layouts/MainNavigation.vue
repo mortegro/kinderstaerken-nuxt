@@ -3,7 +3,7 @@
     button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navcollapse')
       span.navbar-toggler-icon
     a.navbar-brand(href='/')
-      img(src='images/uploads/logoverein.png', alt='logo')
+      img(src='/images/uploads/logoverein.png', alt='logo')
     #navcollapse.collapse.navbar-collapse
       ul.nav.navbar-nav.ml-auto
         li.scroll

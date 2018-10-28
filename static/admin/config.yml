@@ -37,3 +37,4 @@ collections:
       - {label: "Datum", name: "date", widget: "datetime", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Teaser", name: "teaser", widget: "markdown"}
+      - {label: "Images", name: "images", widget: "list", fields: {label: Image, name: image, widget: image}}
