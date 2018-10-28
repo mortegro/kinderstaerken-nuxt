@@ -5,7 +5,7 @@
         Title Unterstützen
         Atom(id="unterstuetzer")
       .row
-        .col-sm-6
+        .col-lg-6.col-sm-12
           .blog-post.blog-large.wow.fadeInLeft(data-wow-duration='300ms', data-wow-delay='0ms')
             article
               header.entry-header
@@ -16,25 +16,22 @@
                   .pull-left
                     i.fa.fa-hand-holding-heart
                   .media-body
-                    h4.media-heading Finanzielle Unterstützung
-                    Atom(id="konto")
+                    Atom(id="konto", heading="Finanzielle Unterstützung")
                 .media.service-box.wow.fadeInRight(@click="wishlist")
                   .pull-left
                     i.fa.fa-clipboard-list
                   .media-body
-                    h4.media-heading Amazon Wishlist
-                    Atom(id="wishlist")
+                    Atom(id="wishlist", heading="Amazon Wishlist")
                 .media.service-box.wow.fadeInRight(@click="amazon")
                   .pull-left
                     i.fa.fa-shopping-cart
                   .media-body
-                    h4.media-heading Amazon Partnerprogramm
-                    Atom(id="partnerprogramm")
-        .col-sm-6
+                    Atom(id="partnerprogramm", heading="Amazon Partnerprogramm")
+        .col-lg-6.col-sm-12
           .blog-post.blog-media.wow.fadeInRight(data-wow-duration='300ms', data-wow-delay='100ms')
             article.media.clearfix
               .entry-thumbnail.pull-left
-                img.img-responsive(src='images/uploads/workshoppate.jpg', alt='')
+                img.w-100(src='images/uploads/workshoppate.jpg', alt='')
                 span.post-format.post-format-gallery
                   i.fa.fa-users
               .media-body
@@ -45,7 +42,7 @@
           .blog-post.blog-media.wow.fadeInRight(data-wow-duration='300ms', data-wow-delay='200ms')
             article.media.clearfix
               .entry-thumbnail.pull-left
-                img.img-responsive(src='images/uploads/give.jpg', alt='giving hands')
+                img.w-100(src='images/uploads/give.jpg', alt='giving hands')
                 span.post-format.post-format-audio
                   i.fa.fa-parachute-box
               .media-body
@@ -53,7 +50,7 @@
                   h2.entry-title Workshop-Pate
                 .entry-content
                   Atom(id="projektpate")
-    #spendenmodal.modal(tabindex="-1",role="dialog", ref="spendenmodal")
+    #spendenmodal.modal.fade(tabindex="-1",role="dialog", ref="spendenmodal")
       .modal-dialog(role='document')
         .modal-content
           .modal-header

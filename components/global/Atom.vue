@@ -1,6 +1,6 @@
 <template lang="pug">
 div.content-element
-  div(v-if="title" :class="[titleClass]")  {{heading}}
+  div(v-if="title" :class="[headingClass]")  {{heading}}
   div(:class="[contentClass]",v-html="$md.render(body)")
 </template>
 
@@ -14,7 +14,7 @@ export default {
     heading: {
       type: String
     },
-    titleClass: {
+    headingClass: {
       type: String,
       default: "content-title"
     },
