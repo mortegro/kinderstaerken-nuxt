@@ -1,19 +1,19 @@
 <template lang="pug">
-  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top(role='banner')
+  nav#topnav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top(role='banner')
     button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navcollapse')
       span.navbar-toggler-icon
     a.navbar-brand(href='/')
       img(src='images/uploads/logoverein.png', alt='logo')
     #navcollapse.collapse.navbar-collapse
       ul.nav.navbar-nav.ml-auto
-        li.scroll.active
-          nuxt-link(to='/#home' v-smooth-scroll="{ duration: 1000, offset: 0}") Home
         li.scroll
-          nuxt-link(to='/#cause' v-smooth-scroll="{ duration: 1000, offset: -100 }") Anliegen
+          nuxt-link(to='/#home' v-smooth-scroll="{ duration: 1000, offset: -100}") Home
         li.scroll
-          nuxt-link(to='/#workshops' v-smooth-scroll="{ duration: 1000, offset: -100 }") Workshops
+          nuxt-link(to='/#cause' v-smooth-scroll="{ duration: 1000, offset: -200 }") Anliegen
         li.scroll
-          nuxt-link(to='/#support' v-smooth-scroll="{ duration: 1000, offset: -100 }") Support
+          nuxt-link(to='/#workshops' v-smooth-scroll="{ duration: 1000, offset: -200 }") Workshops
+        li.scroll
+          nuxt-link(to='/#support' v-smooth-scroll="{ duration: 1000, offset: -200 }") Support
         li.scroll
           nuxt-link(to='/#get-in-touch' v-smooth-scroll="{ duration: 1000, offset: -100 }") Kontakt
         li.scroll

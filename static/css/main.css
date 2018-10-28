@@ -387,19 +387,6 @@ ul.nostyle i {
     border-top-color: #eee;
 }
 
-
-#get-in-touch {
-    padding: 100px 0 50px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#2caab3), to(#2c8cb3));
-    background-image: linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
-    color: #fff;
-}
-
-#get-in-touch h1,
-#get-in-touch h2 {
-    color: #fff;
-}
-
 #blog {
     padding: 100px 0;
 }

@@ -9,26 +9,22 @@
           .blog-post.blog-large.wow.fadeInLeft(data-wow-duration='300ms', data-wow-delay='0ms')
             article
               header.entry-header
-                //- .entry-thumbnail
-                //-   img.img-responsive(src='images/blog/01.jpg', alt='')
-                //-   span.post-format.post-format-video
-                //-     i.fa.fa-film
                 h2.entry-title Spender
               .entry-content
                 Atom(id="spenden")
-                .media.service-box.wow.fadeInRight
+                .media.service-box.wow.fadeInRight(data-toggle="modal",data-target="#spendenmodal")
                   .pull-left
                     i.fa.fa-hand-holding-heart
                   .media-body
                     h4.media-heading Finanzielle Unterstützung
                     Atom(id="konto")
-                .media.service-box.wow.fadeInRight
+                .media.service-box.wow.fadeInRight(@click="wishlist")
                   .pull-left
                     i.fa.fa-clipboard-list
                   .media-body
                     h4.media-heading Amazon Wishlist
                     Atom(id="wishlist")
-                .media.service-box.wow.fadeInRight
+                .media.service-box.wow.fadeInRight(@click="amazon")
                   .pull-left
                     i.fa.fa-shopping-cart
                   .media-body
@@ -57,7 +53,41 @@
                   h2.entry-title Workshop-Pate
                 .entry-content
                   Atom(id="projektpate")
+    #spendenmodal.modal(tabindex="-1",role="dialog", ref="spendenmodal")
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title Spendenkonto
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body
+            p Für eine finanzielle Unterstützung unserer Projekte sind wir Ihnen sehr dankbar. 
+            p 
+              strong Bankverbindung:
+              br
+              | Skatbank Altenburg
+              br
+              | IBAN: DE51 8306 5408 0004 8459 27
+              br
+              | BIC: GENO DEF1 SLR
+          .modal-footer
+            button.btn.btn-secondary(type='button', data-dismiss='modal') Schließen
 </template>
+
+<script>
+export default {
+  methods: {
+    wishlist() {
+      window.open('http://www.amazon.de/registry/wishlist/26ALMABVEFYJT')
+    },
+    amazon() {
+      window.open('http://www.kinderstaerken.org/amazon')
+    }
+  }
+}
+</script>
+
+
 
 <style scoped>
 .blog-post.blog-media .entry-thumbnail {

@@ -74,6 +74,10 @@ export default {
 </script>
 
 <style scoped>
+/* #main-slider {
+  margin-top: 100px;
+} */
+
 .slider-inner {
   position: relative;    
   overflow: hidden;
