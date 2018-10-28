@@ -15,9 +15,11 @@
         li.scroll
           nuxt-link(to='/#support' v-smooth-scroll="{ duration: 1000, offset: -200 }") Support
         li.scroll
-          nuxt-link(to='/#get-in-touch' v-smooth-scroll="{ duration: 1000, offset: -100 }") Kontakt
+          nuxt-link(to='/#activities' v-smooth-scroll="{ duration: 1000, offset: -200 }") Aktivitäten
         li.scroll
-          nuxt-link(to='/impressum/') Impressum
+          nuxt-link(to='/#get-in-touch' v-smooth-scroll="{ duration: 1000, offset: -100 }") Kontakt
+        //- li.scroll
+        //-   nuxt-link(to='/impressum/') Impressum
 </template>
 
 <style scoped>

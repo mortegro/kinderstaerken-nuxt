@@ -1,10 +1,10 @@
 <template lang="pug">
   .portfolio-item(data-wow-duration="300ms", :class="[category]")
     .portfolio-item-inner
-      img.w-100(:src="fullImgPath", alt='')
+      img.w-100(:src="imageUrl | fullImagePath", alt='')
       .portfolio-info
         h3 {{title}}
-        a.preview(href='images/portfolio/full.jpg', rel='prettyPhoto')
+        nuxt-link.preview(:to='_path')
           i.fa.fa-eye
 </template>
 
@@ -15,13 +15,8 @@ export default {
     title: {type: String, default: ''},
     imageUrl: {type: String, default: 'noImage.jpg'},
     category: {type: String, default: ''},
-
+    _path: {type: String, default: ''},
   },
-  computed: {
-    fullImgPath: function() {
-      return "images/uploads/" + this.imageUrl
-    }
-  }
 }
 </script>
 

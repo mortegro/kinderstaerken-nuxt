@@ -1,5 +1,5 @@
 <template lang="pug">
-Section#portfolio
+Section#activities
   .container
     .section-header
       h2.section-title.text-center.wow.fadeInDown Unsere Aktivitäten
@@ -19,7 +19,7 @@ Section#portfolio
 </template>
 
 <script>
-import Activity from '~/components/Activity'
+import Activity from './activity'
 export default {
   components:{
     Activity
@@ -37,6 +37,7 @@ export default {
       return 0
     }
     const sorted = activities.sort(sortFn)
+    // console.log(sorted)
     return { activities: sorted };
   }
 }

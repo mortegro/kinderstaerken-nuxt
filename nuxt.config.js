@@ -51,6 +51,7 @@ module.exports = {
   */
   plugins: [
     { src: '~/plugins/global.js', ssr: true },
+    { src: '~plugins/fullImagePath', ssr: true },
     { src: '~plugins/vue-carousel', ssr: false },
     { src: '~plugins/smooth-scroll', ssr: false },
   ],
