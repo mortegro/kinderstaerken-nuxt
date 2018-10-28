@@ -14,9 +14,8 @@ Section#activities
           a(@click="setFilter('design')", :class="{active: filter=='design'}") Design
         li
           a(@click="setFilter('build')", :class="{active: filter=='build'}") Build
-    .portfolio-items
-      transition-group(name="items")
-        Activity(v-for="activity in filtered", v-bind="activity", :key="activity.idx")
+    transition-group.portfolio-items.h-100.d-inline-block(name="items", tag="div")
+      Activity(v-for="activity in filtered", v-bind="activity", :key="activity.idx")
 </template>
 
 <script>
@@ -64,6 +63,9 @@ export default {
 
 
 <style scoped>
+.portfolio-items {
+    margin: -15px;
+}
 
 .items-enter-active, .items-leave-active {
   transition: all 1s;
@@ -82,6 +84,7 @@ Section{
     padding: 80px 0;
     margin-top: 0px;
 }
+
 .portfolio-filter {
     list-style: none;
     padding: 0;

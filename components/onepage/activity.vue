@@ -1,5 +1,5 @@
 <template lang="pug">
-  .portfolio-item(data-wow-duration="300ms", :class="[category]")
+  .portfolio-item(data-wow-duration="300ms")
     .portfolio-item-inner
       img.w-100(:src="imageUrl | fullImagePath", alt='')
       .portfolio-info
@@ -21,11 +21,6 @@ export default {
 </script>
 
 <style scoped>
-
-.portfolio-items {
-    margin: -15px;
-}
-
 .portfolio-item {
     width: 24.9%;
     float: left;
@@ -34,6 +29,7 @@ export default {
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+    display: block;
 }
 
 .portfolio-item .portfolio-item-inner {
