@@ -7,15 +7,16 @@ Section#activities
     .text-center
       ul.portfolio-filter
         li
-          a.active(href='#', data-filter='*') Alle
+          a(@click="setFilter('')", :class="{active: filter==''}") Alle
         li
-          a(href='#', data-filter='.move') Move
+          a(@click="setFilter('move')", :class="{active: filter=='move'}") Move
         li
-          a(href='#', data-filter='.design') Design
+          a(@click="setFilter('design')", :class="{active: filter=='design'}") Design
         li
-          a(href='#', data-filter='.build') Build
+          a(@click="setFilter('build')", :class="{active: filter=='build'}") Build
     .portfolio-items
-      Activity(v-for="(activity, id) in activities", v-bind="activity", :key="id")
+      transition-group(name="items")
+        Activity(v-for="activity in filtered", v-bind="activity", :key="activity.idx")
 </template>
 
 <script>
@@ -38,7 +39,23 @@ export default {
     }
     const sorted = activities.sort(sortFn)
     // console.log(sorted)
-    return { activities: sorted };
+    return { 
+      activities: sorted,
+      filter: ''
+    };
+  },
+  methods: {
+    setFilter(arg) {
+      this.filter = arg
+    }
+  },
+  computed: {
+    filtered() {
+      return this.activities.filter(v=>{
+        if (!this.filter || this.filter=='') return true
+        if (v.category == this.filter) return true
+      }).map((v,idx)=>({...v, idx}))
+    }
   }
 }
 </script>
@@ -47,6 +64,19 @@ export default {
 
 
 <style scoped>
+
+.items-enter-active, .items-leave-active {
+  transition: all 1s;
+}
+.items-enter, .items-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.items-move {
+  transition: transform 1s;
+}
+
 Section{
     background: #f5f5f5;
     padding: 80px 0;
