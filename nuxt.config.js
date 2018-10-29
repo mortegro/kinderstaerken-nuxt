@@ -1,4 +1,11 @@
 const pkg = require('./package')
+var glob = require('glob');
+var path = require('path');
+
+
+var dynamicRoutes = getDynamicPaths({
+  '/activities': 'activities/*.json'
+});
 
 module.exports = {
   mode: 'universal',
@@ -7,14 +14,17 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: "KinderStärken! e.V.",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'KinderStärken e.V. Jena' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/images/ico/favicon.ico' },
+      { rel: "icon", type:"image/png", sizes:"32x32", href:"/images/ico/favicon-32x32.png" },
+      { rel: "icon", type:"image/png", sizes:"96x96", href:"/images/ico/favicon-96x96.png" },
+      { rel: "icon", type:"image/png", sizes:"16x16", href:"/images/ico/favicon-16x16.png" },
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity:"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin:"anonymous" },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' },
@@ -37,7 +47,9 @@ module.exports = {
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
-
+  generate: {
+    routes: dynamicRoutes
+  },
   /*
   ** Global CSS
   */
@@ -76,4 +88,20 @@ module.exports = {
       
     },
   }
+}
+
+
+/**
+ * Create an array of URLs from a list of files
+ * @param {*} urlFilepathTable
+ */
+function getDynamicPaths(urlFilepathTable) {
+  return [].concat(
+    ...Object.keys(urlFilepathTable).map(url => {
+      var filepathGlob = urlFilepathTable[url];
+      return glob
+        .sync(filepathGlob, { cwd: 'content' })
+        .map(filepath => `${url}/${path.basename(filepath, '.json')}`);
+    })
+  );
 }

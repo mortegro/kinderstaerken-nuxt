@@ -7,7 +7,7 @@ div
         p.text-center.wow.fadeInDown
           | Für weitere Informationen, Anregungen o.ä. können Sie gern persönlich mit uns Kontakt aufnehmen.
   section
-    #contact(style="background-image: url('/images/contact.jpg'")
+    #contact
       #form.container
         .row
           .col-md-5.ml-auto.contact-form
@@ -60,6 +60,7 @@ div
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-image: url('/images/contact.jpg');
 }
 
 
