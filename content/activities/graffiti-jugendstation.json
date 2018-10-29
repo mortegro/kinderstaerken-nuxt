@@ -4,5 +4,8 @@
   "date": "2016-05-01T22:12:03.284Z",
   "imageUrl": "graffiti_01.jpg",
   "category": "design",
-  "images": []
+  "images": [
+    "graffiti_01.jpg",
+    "graffiti_02.jpg"
+  ]
 }
