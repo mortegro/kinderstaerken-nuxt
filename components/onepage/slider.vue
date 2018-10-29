@@ -2,7 +2,7 @@
   section#main-slider
     #slider.carousel.slide(data-ride='carousel')
       .carousel-inner.embed-responsive.embed-responsive-21by9
-        .carousel-item.embed-responsive-item.active(style="background-image: url('images/uploads/bg2.jpg'")
+        .carousel-item.embed-responsive-item.active(style="background-image: url('images/uploads/bg2.jpg');")
           //- img.d-block.w-100(src='', alt='First slide')
           .carousel-caption.d-none.d-md-block
             h2
@@ -15,7 +15,7 @@
               | können diese ihren eigenen Horizont erweitern.
             a.btn.btn-primary(href="#mentors") Mentor werden.
 
-        .carousel-item.embed-responsive-item(style="background-image: url('/images/uploads/bg1.jpg'")
+        .carousel-item.embed-responsive-item(style="background-image: url('/images/uploads/bg1.jpg')")
           //- img.d-block.w-100(src='images/uploads/bg1.jpg', alt='Second slide')
           .carousel-caption.d-none.d-md-block
             h2
@@ -25,7 +25,7 @@
               | Durch das Entdecken der in uns liegenden Potentiale lassen sich schwierige Zeiten einfacher überwinden.
             nuxt-link.btn.btn-primary(to='/#support', v-smooth-scroll="{ duration: 1000, offset: -100 }") Projekte unterstützen.
 
-        .carousel-item.embed-responsive-item(style="background-image: url('~/static/images/uploads/bg3.jpg'")
+        .carousel-item.embed-responsive-item(style="background-image: url('~/static/images/uploads/bg3.jpg')")
           //- img.d-block.w-100(src='images/uploads/bg3.jpg', alt='Third slide')
           .carousel-caption.d-none.d-md-block
             h2
@@ -38,7 +38,7 @@
               |  Besonders dadurch, was wir mit diesen erschaffen, verstehen wir unsere eigenen Möglichkeiten.
             nuxt-link.btn.btn-primary(to='/#support', v-smooth-scroll="{ duration: 1000, offset: -100 }") Projektpate werden.
 
-        .carousel-item.embed-responsive-item(style="background-image: url('images/uploads/bg4.jpg'")
+        .carousel-item.embed-responsive-item(style="background-image: url('images/uploads/bg4.jpg')")
           //- img.d-block.w-100(src='images/uploads/bg4.jpg', alt='Third slide')
           .carousel-caption.d-none.d-md-block
             h2.dark
@@ -71,6 +71,11 @@ export default {
 </script>
 
 <style scoped>
+
+.bg2 {
+
+}
+
 .carousel-item {
   background: no-repeat center center scroll;
   -webkit-background-size: contain;
