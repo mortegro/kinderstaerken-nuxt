@@ -72,10 +72,6 @@ export default {
 
 <style scoped>
 
-.bg2 {
-
-}
-
 .carousel-item {
   background: no-repeat center center scroll;
   -webkit-background-size: contain;
