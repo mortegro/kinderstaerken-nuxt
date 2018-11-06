@@ -54,14 +54,21 @@ div
 #contact {
     position: relative;
     overflow: hidden;
-    background: no-repeat left left scroll;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-attachment: scroll;
     background-size: cover;
     background-image: url('/images/contact.jpg');
 }
 
+@media only screen and (max-width: 480px) {
+  #contact {
+    background-position-x: -50px;
+  }
+}
 
 .contact-form {
-    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin-top: 50px;
 }
