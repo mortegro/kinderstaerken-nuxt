@@ -9,6 +9,9 @@
             .carousel-inner
               .carousel-item(v-if="images", v-for="(img,idx) in images", :key="idx", :class="{ active: (idx==0)}")
                 img.d-block.w-100(:src="img | fullImagePath")
+              .carousel-item(v-if="videos", v-for="(video,idx) in videos", :key="idx+500")
+                .embed-responsive.embed-responsive-16by9
+                  iframe.embed-responsive-item.d-block.w-100(:src="video")
             a.carousel-control-prev(href='#slider', role='button', data-slide='prev')
               span.carousel-control-prev-icon(aria-hidden='true')
               span.sr-only Previous
