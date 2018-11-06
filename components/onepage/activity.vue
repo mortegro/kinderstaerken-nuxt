@@ -22,14 +22,14 @@ export default {
 
 <style scoped>
 .portfolio-item {
-    width: 24.9%;
-    float: left;
     padding: 15px;
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 350px;
+    flex: 0 1 350px;
 }
 
 .portfolio-item .portfolio-item-inner {
@@ -42,7 +42,7 @@ export default {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
 }

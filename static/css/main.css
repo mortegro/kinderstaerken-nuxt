@@ -66,6 +66,7 @@ hr {
 
 .section-header .section-title {
     font-size: 44px;
+    line-height: 1;
     color: #272727;
     text-transform: uppercase;
     position: relative;
