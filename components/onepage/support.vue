@@ -152,8 +152,17 @@ export default {
 }
 
 .blog-post.blog-media .entry-thumbnail {
-    margin: -15px 15px -15px -15px;
+    margin: -15px 15px 15px -15px;
     position: relative;
+    max-width: 50%;
+}
+
+.blog-post.blog-media .media {
+    display: block;
+}
+
+.blog-post.blog-media .entry-thumbnail.pull-left {
+    float: left;
 }
 
 .blog-post.blog-media .post-format {

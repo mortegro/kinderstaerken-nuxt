@@ -81,6 +81,12 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    postcss: [
+      require('autoprefixer')({
+        browsers: ['last 2 versions']
+      })
+    ],
+
     /*
     ** You can extend webpack config here
     */

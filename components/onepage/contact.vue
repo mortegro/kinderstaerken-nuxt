@@ -37,7 +37,6 @@ div
 
 #get-in-touch {
   padding: 80px 0 30px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#2caab3), to(#2c8cb3));
   background-image: linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   color: #fff;
 }
@@ -55,17 +54,21 @@ div
 #contact {
     position: relative;
     overflow: hidden;
-    background: no-repeat left left scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-attachment: scroll;
     background-size: cover;
     background-image: url('/images/contact.jpg');
 }
 
+@media only screen and (max-width: 480px) {
+  #contact {
+    background-position-x: -50px;
+  }
+}
 
 .contact-form {
-    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin-top: 50px;
 }
