@@ -70,9 +70,6 @@ export default {
 
 .carousel-item {
   background: no-repeat center center scroll;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -85,8 +82,6 @@ export default {
   top: 50%;
   transform: translateY(-40%);
   bottom: initial;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   right:50%;
   left: 5%;

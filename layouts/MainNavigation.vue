@@ -78,7 +78,6 @@
 @media only screen and (min-width: 991px) {
     .navbar-light{
         background: rgba(255, 255, 255, 1);
-        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
     }
     .navbar-nav>li {
@@ -103,15 +102,12 @@
         border: 0;
         border-radius: 0;
         box-shadow: none;
-        -webkit-box-shadow: none;
         background-clip: inherit;
     }
     .dropdown-menu>li {
         border-left: 3px solid transparent;
         margin-left: -20px;
         padding-left: 17px;
-        -webit-transition: border-color 400ms;
-        -webkit-transition: border-color 400ms;
         transition: border-color 400ms;
     }
     .dropdown-menu>li>a {

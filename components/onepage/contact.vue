@@ -37,7 +37,6 @@ div
 
 #get-in-touch {
   padding: 80px 0 30px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#2caab3), to(#2c8cb3));
   background-image: linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   color: #fff;
 }
@@ -56,9 +55,6 @@ div
     position: relative;
     overflow: hidden;
     background: no-repeat left left scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-image: url('/images/contact.jpg');
 }

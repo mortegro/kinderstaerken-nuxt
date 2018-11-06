@@ -65,15 +65,8 @@ export default {
 <style scoped>
 .portfolio-items {
     margin: -15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -120,7 +113,6 @@ Section{
     background: #45aed6;
     color: #fff;
     box-shadow: 0 -3px 0 0 #318daf inset;
-    -webkit-box-shadow: 0 -3px 0 0 #318daf inset;
 }
 
 .portfolio-filter>li a.active:after {
