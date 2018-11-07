@@ -34,7 +34,8 @@
 
 .navbar-brand {
   height: auto;
-  padding: 22px 15px 21px;
+  padding: 0 15px;
+  margin-right: 0;
 }
 
 .navbar-brand img {
