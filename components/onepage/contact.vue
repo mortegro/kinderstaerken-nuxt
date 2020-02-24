@@ -27,7 +27,7 @@ div
               .form-group
                 input.form-control(type='text', name='subject', placeholder='Betreff', required='')
               .form-group
-                textarea.form-control#message(rows='8', placeholder='Nachricht', required='')
+                textarea.form-control#message(name='message', rows='8', placeholder='Nachricht', required='')
               .form-group
                 input(type="hidden", name="_language", value="de")
                 input.btn.btn-primary(type="submit", value="Nachricht senden")
